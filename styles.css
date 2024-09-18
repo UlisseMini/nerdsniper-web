@@ -1,0 +1,157 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.tagline {
+    font-style: italic;
+    color: #7f8c8d;
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+main {
+    text-align: center;
+}
+
+.description {
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta {
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cta.primary {
+    background-color: #3498db;
+    color: white;
+}
+
+.cta.secondary {
+    background-color: white;
+    color: #3498db;
+    border: 2px solid #3498db;
+}
+
+.cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cta.primary:hover {
+    background-color: #2980b9;
+}
+
+.cta.secondary:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .cta-container {
+        flex-direction: column;
+    }
+}
+
+.app-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.app-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.app-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+    flex-grow: 1;
+    object-fit: cover;
+}
+
+.app-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.app-card p {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+    .app-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .app-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
